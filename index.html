@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="section">
+        <img src="image/download.png">
+        <h1>Ask me a Question</h1>
+        <input type="text" placeholder="Type Something....." id="input"><br>
+        <button class="btn1" onclick="accept()">Accept</button>
+        <button class="btn2" onclick="decline()">Decline</buuton>
+    </div>
+    <script>
+        
+        function accept(){
+            let input=document.getElementById("input").value;
+            if(input==''){
+                alert("Enter a Question")
+            }
+            else if(input=="How are You?"){
+                alert("Not a Valid Question")
+            }else if(input=="What is your Name?"){
+                alert("Not a Valid Question")
+            }else if(input=="What is your Age?"){
+                alert("Not a Valid Question")
+            }
+            else if(input=="Where Are You From?"){
+                alert("Not a Valid Question")
+            }else if(input=="What is Your Pet Name?"){
+                alert("Not a Valid Question")
+            }
+            
+            else{
+                alert("Accept")
+            }
+        }
+        function decline(){
+            let input=document.getElementById("input").value;
+            alert("Question Decline")
+
+        }
+    </script
+</body>
+
+</html>
